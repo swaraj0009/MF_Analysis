@@ -1,0 +1,107 @@
+company_name,corpus_per,ticker
+"Reliance Industries Ltd.",9.90428946,RELIANCE
+"JIO Financial Services Ltd.",6.17459087,JIOFIN
+"Aegis Logistics Ltd.",3.45208559,AEGISLOG
+"RBL Bank Ltd.",3.17961653,RBLBANK
+"Bikaji Foods International Ltd.",2.81259241,BIKAJI
+"Poly Medicure Ltd.",2.47570693,POLYMED
+"Adani Power Ltd.",2.23490539,ADANIPOWER
+"HFCL Ltd.",2.20766797,HFCL
+"Adani Enterprises Ltd.",2.18212719,ADANIENT
+"Aster DM Healthcare Ltd.",2.13884337,ASTERDM
+"Bayer CropScience Ltd.",2.0955275,BAYERCROP
+"Sun TV Network Ltd.",2.08273973,SUNTV
+"Ventive Hospitality Ltd.",1.91676432,VENTIVE
+"Anand Rathi Wealth Ltd.",1.87718463,ANANDRATHI
+"NBCC (India) Ltd.",1.71004585,NBCC
+"Aditya Birla Lifestyle Brands Ltd.",1.70774574,ABLBL
+"Arvind Ltd.",1.68296435,ARVIND
+"Pfizer Ltd.",1.67671914,PFIZER
+"Capri Global Capital Ltd.",1.65831695,CGCL
+"Piramal Enterprises Ltd.",1.56676739,PEL
+"Oil And Natural Gas Corporation Ltd.",1.51551877,ONGC
+"Sequent Scientific Ltd.",1.46385535,SEQUENT
+"Welspun Corp Ltd.",1.34776234,WELCORP
+"Keystone Realtors Ltd",1.28552114,RUSTOMJEE
+"Minda Corporation Ltd.",1.28550123,MINDACORP
+"Onesource Specialty Pharma Ltd.",1.23910493,ONESOURCE
+"Zydus Wellness Ltd.",1.23373859,ZYDUSWELL
+"Welspun Enterprises Ltd.",1.22549432,WELENT
+"NCC Ltd.",1.21751399,NCC
+"Jubilant Pharmova Ltd.",1.20417541,JUBLPHARMA
+"Just Dial Ltd.",1.18134143,JUSTDIAL
+"Usha Martin Ltd.",1.15556136,USHAMART
+"E.I.D. - Parry (India) Ltd.",1.02564984,EIDPARRY
+"Strides Pharma Science Ltd.",1.01443316,STAR
+"Bata India Ltd.",0.99145067,BATAINDIA
+"Afcons Infrastructure Ltd.",0.98053741,AFCONS
+"The Karnataka Bank Ltd.",0.97438535,KTKBANK
+"JM Financial Ltd.",0.89885788,JMFINANCIL
+"Orchid Pharma Ltd.",0.83557278,ORCHPHARMA
+"Aditya Birla Fashion and Retail Ltd.",0.81538653,ABFRL
+"Anupam Rasayan India Ltd.",0.80399874,ANURAS
+"Samvardhana Motherson International Ltd.",0.7920922,MOTHERSON
+"Siemens Energy India Ltd.",0.7231569,ENRIN
+"EPL Ltd.",0.64942058,EPL
+"India Shelter Finance Corporation Ltd.",0.64435394,INDIASHLTR
+"Apeejay Surrendra Park Hotels Ltd.",0.59280763,PARKHOTELS
+"Aarti Industries Ltd.",0.58841431,AARTIIND
+"Welspun Living Ltd.",0.58643045,WELSPUNLIV
+"Juniper Hotels Ltd.",0.58295583,JUNIPER
+"Gujarat State Fertilizers \u0026 Chemicals Ltd.",0.52812761,GSFC
+"Himadri Speciality Chemical Ltd.",0.52148583,HSCL
+"K.P.R. Mill Ltd.",0.5067034,KPRMILL
+"RBL Bank Ltd.",0.49956818,RBLBANK
+"Indoco Remedies Ltd.",0.45012353,INDOCO
+"Reserve Bank of India",0.4334136,BANKINDIA
+"Jana Small Finance Bank Ltd.",0.43082729,JSFB
+"Delhivery Ltd.",0.43008342,DELHIVERY
+"Sula Vineyards Ltd.",0.42972027,SULA
+"Alivus Life Sciences Ltd",0.42360499,ALIVUS
+"Indraprastha Medical Corporation Ltd.",0.39249874,INDRAMEDCO
+"TVS Srichakra Ltd.",0.38471112,TVSSRICHAK
+"Balrampur Chini Mills Ltd.",0.38093173,BALRAMCHIN
+"Man Infraconstruction Ltd.",0.36897489,MANINFRA
+"Nitin Spinners Ltd.",0.36263383,NITINSPIN
+"PG Electroplast Ltd.",0.35822195,PGEL
+"Oswal Pumps Ltd.",0.34842853,OSWALPUMPS
+"Thyrocare Technologies Ltd.",0.34772449,THYROCARE
+"Maharashtra Seamless Ltd.",0.3348564,MAHSEAMLES
+"Embassy Developments Ltd.",0.33381249,EMBDL
+"BASF India Ltd.",0.29722311,BASF
+"Suven Life Sciences Ltd. - Warrant",0.29293982,SUVEN
+"Vishnu Prakash R Punglia Ltd.",0.28907807,VPRPL
+"Exicom Tele-Systems Ltd.",0.25164324,EXICOM
+"Life Insurance Corporation of India",0.24164563,LICI
+"Castrol India Ltd.",0.23204257,CASTROLIND
+"Capacit'e Infraprojects Ltd.",0.22831853,CAPACITE
+"Newgen Software Technologies Ltd.",0.19916036,NEWGEN
+"Reserve Bank of India",0.19036292,BANKINDIA
+"Rishabh Instruments Ltd.",0.1887169,RISHABH
+"Vinati Organics Ltd.",0.18398979,VINATIORGA
+"Oriental Hotels Ltd.",0.1802374,ORIENTHOT
+"Orissa Minerals Development Company Ltd.",0.17865989,ORISSAMINE
+"Reserve Bank of India",0.16836123,BANKINDIA
+"SMS Pharmaceuticals Ltd.",0.1569272,SMSPHARMA
+"Prime Securities Ltd.",0.15382855,PRIMESECU
+"Aadhar Housing Finance Ltd",0.14653471,AADHARHFC
+"Vardhman Textiles Ltd.",0.14625559,VTL
+"Reserve Bank of India",0.14404898,BANKINDIA
+"Sanofi India Ltd.",0.13743554,SANOFI
+"NCC Ltd.",0.12933506,NCC
+"Taj GVK Hotels \u0026 Resorts Ltd.",0.12623101,TAJGVK
+"Mahindra Holidays \u0026 Resorts India Ltd.",0.11389179,MHRIL
+"Indian Hume Pipe Company Ltd.",0.11301765,INDIANHUME
+"Sai Silks (Kalamandir) Ltd.",0.10783828,KALAMANDIR
+"Reserve Bank of India",0.10029333,BANKINDIA
+"Chambal Fertilisers and Chemicals Ltd.",0.09849104,CHAMBLFERT
+"Chambal Fertilisers and Chemicals Ltd.",0.09659493,CHAMBLFERT
+"Digitide Solutions Ltd.",0.09434782,DIGITIDE
+"Reserve Bank of India",0.08674718,BANKINDIA
+"Stanley Lifestyles Ltd.",0.07834361,STANLEY
+"Best Agrolife Ltd.",0.0599664,BESTAGRO
+"Primo Chemicals Ltd.",0.03958812,PRIMO
+"HP Adhesives Ltd.",0.02067123,HPAL
+"Laxmi Dental Ltd.",0.02051261,LAXMIDENTL
+"Om Infra Ltd.",0.0063549,OMINFRAL
+"Quant Gilt Fund Direct - Growth",0.00204528,

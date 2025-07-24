@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="basePath" elementType="Argument">
+            <stringProp name="Argument.name">basePath</stringProp>
+            <stringProp name="Argument.value">/Users/swaraj.thummapudi/Documents/Personal/Stock/</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters">
+        <collectionProp name="UserParameters.names">
+          <stringProp name="-147277949">fundNames</stringProp>
+          <stringProp name="-1263365472">fundid</stringProp>
+          <stringProp name="3154629">fund</stringProp>
+        </collectionProp>
+        <collectionProp name="UserParameters.thread_values">
+          <collectionProp name="609275441">
+            <stringProp name="378226244">quant-small-cap-fund-direct-plan-growth</stringProp>
+            <stringProp name="-182187358">INF966L01689</stringProp>
+            <stringProp name="-1712774654">quant-small-cap</stringProp>
+          </collectionProp>
+          <collectionProp name="997966012">
+            <stringProp name="746078324">motilal-oswal-most-focused-midcap-30-fund-direct-growth</stringProp>
+            <stringProp name="1281940252">INF247L01445</stringProp>
+            <stringProp name="-614423392">motilal-mid-cap</stringProp>
+          </collectionProp>
+          <collectionProp name="1149852170">
+            <stringProp name="-678740936">canara-robeco-small-cap-fund-direct-growth</stringProp>
+            <stringProp name="-1920910111">INF760K01JC6</stringProp>
+            <stringProp name="475535615">canara-small-cap</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <boolProp name="UserParameters.per_iteration">false</boolProp>
+      </UserParameters>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+        <intProp name="ThreadGroup.num_threads">3</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="NAV time" enabled="false">
+          <stringProp name="HTTPSampler.domain">staticassets.zerodha.com</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/coin/historical-nav/${fundid}.json</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">false</stringProp>
+            <stringProp name="script">import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
+import java.text.SimpleDateFormat
+
+// === Setup ===
+def basePath = vars.get(&quot;basePath&quot;)                    // From JMeter User Defined Variables
+def fund = vars.get(&quot;fund&quot;)                            // e.g., &quot;motilal-mid-cap&quot;
+def fileName = fund.toLowerCase().replaceAll(&quot;\\s+&quot;, &quot;_&quot;) + &quot;.json&quot;
+def jsonFile = new File(&quot;${basePath}/${fileName}&quot;)
+
+// === Parse Response ===
+def response = prev.getResponseDataAsString()
+def jsonSlurper = new JsonSlurper()
+def responseData = jsonSlurper.parseText(response)
+
+// === Check if &apos;data&apos; exists ===
+def navEntries = responseData[&quot;data&quot;]
+if (!navEntries || !(navEntries instanceof List)) {
+    log.warn(&quot;No NAV data found in API response for fund: ${fund}&quot;)
+    return
+}
+
+// === Load existing fund data if available ===
+def fundData = [:]
+if (jsonFile.exists()) {
+    try {
+        fundData = jsonSlurper.parseText(jsonFile.text)
+    } catch (e) {
+        log.warn(&quot;Could not parse existing JSON file for ${fund}: ${e.message}&quot;)
+        fundData = [:]
+    }
+}
+
+// === Convert and Update Data ===
+def sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;)
+navEntries.each { entry -&gt;
+    def timestamp = entry[0] * 1000L  // Convert seconds to milliseconds
+    def nav = entry[1] as Float
+    def date = sdf.format(new Date(timestamp))
+    fundData[date] = nav
+}
+
+// === Write Back to File ===
+try {
+    jsonFile.text = JsonOutput.prettyPrint(JsonOutput.toJson(fundData))
+    log.info(&quot;Successfully saved NAVs for ${fund} to ${jsonFile.absolutePath}&quot;)
+} catch (Exception e) {
+    log.error(&quot;Failed to write JSON for ${fund}: ${e.message}&quot;)
+}</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Grow">
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <stringProp name="HTTPSampler.domain">groww.in</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/mutual-funds/${fundNames}</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="compandcorpus">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">compandcorpus</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;company_name&quot;:&quot;(.*?)&quot;.*?&quot;corpus_per&quot;:([\d.]+)</stringProp>
+            <stringProp name="RegexExtractor.template">$1$$2$</stringProp>
+            <stringProp name="RegexExtractor.default">compandcorpus not found</stringProp>
+            <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+            <stringProp name="RegexExtractor.match_number">-1</stringProp>
+            <stringProp name="TestPlan.comments">&quot;company_name&quot;:&quot;(.*?)&quot;.*?&quot;corpus_per&quot;:([\d.]+) |||||| &quot;company_name&quot;:&quot;(.*?)&quot;.*?&quot;sector_name&quot;:&quot;(.*?)&quot;.*?&quot;market_value&quot;:([\d.]+).*?&quot;corpus_per&quot;:([\d.]+) ||||||| $1$$2$$3$$4$</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="v1" enabled="false">
+            <stringProp name="cacheKey">false</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.nio.file.*
+import java.time.format.DateTimeFormatter
+import java.time.LocalDate
+import org.apache.commons.text.StringEscapeUtils  // Make sure you added the JAR to JMeter lib
+
+// 🔹 Step 1: Get JMeter variable and current date
+def fundName = vars.get(&quot;quantsmallcap&quot;) ?: &quot;default_fund&quot;
+def today = LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;ddMMMyy&quot;))
+
+// 🔹 Step 2: Build dynamic filename
+def fileName = &quot;${fundName}_${today}.csv&quot;
+def filePath = Paths.get(&quot;/Users/swaraj.thummapudi/Documents/Personal/Stock/&quot;, fileName)
+
+// 🔹 Step 3: Start writing data
+def data = new StringBuilder(&quot;company_name,corpus_per\n&quot;)
+
+for (int i = 1; vars.get(&quot;compandcorpus_&quot; + i) != null; i++) {
+    def row = vars.get(&quot;compandcorpus_&quot; + i)
+
+    def matcher = (row =~ /^(.*?)(\d+\.\d+)$/)
+    if (matcher.matches()) {
+        def rawCompany = matcher[0][1].trim()
+        def company = StringEscapeUtils.unescapeJava(rawCompany)  // ⬅️ Clean \u0026 etc.
+        def corpus = matcher[0][2]
+        data.append(&quot;\&quot;${company}\&quot;,${corpus}\n&quot;)
+    }
+}
+
+// 🔹 Step 4: Write to file
+Files.createDirectories(filePath.getParent())
+Files.write(filePath, data.toString().getBytes())
+
+log.info(&quot;✅ CSV written to: &quot; + filePath)</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="v2" enabled="false">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">false</stringProp>
+            <stringProp name="script">import java.nio.file.*
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
+// --- 🗂 Config ---
+def basePath = &quot;/Users/swaraj.thummapudi/Documents/Personal/Stock/&quot;
+def today = LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;ddMMMyy&quot;))
+def fundName = vars.get(&quot;fundName&quot;) ?: &quot;default_fund&quot;
+def outFile = Paths.get(basePath, &quot;${fundName}_${today}_final.csv&quot;)
+def tickerFile = new File(&quot;${basePath}EQUITY_L.csv&quot;)
+
+// --- 🧼 Name Cleaner ---
+def clean(String s) {
+    return s?.toLowerCase()
+             ?.replaceAll(/[^a-z0-9\s]/, &quot;&quot;)  // remove symbols
+             ?.replaceAll(/\s+/, &quot; &quot;)         // normalize whitespace
+             ?.trim()
+}
+
+// --- 📄 Read NSE Company → Ticker Map ---
+def nseMap = [:]
+tickerFile.eachLine { line, i -&gt;
+    if (i == 0) return
+    def parts = line.split(&quot;,&quot;, 2)
+    if (parts.length == 2) {
+        def symbol = parts[0].trim()
+        def name = clean(parts[1])
+        if (name) nseMap[name] = symbol
+    }
+}
+
+// --- 🔍 Best fuzzy match (tokens subset logic) ---
+def findTicker = { rawName -&gt;
+    def cleaned = clean(rawName)
+    def growTokens = cleaned.tokenize(&quot; &quot;)
+
+    // Simple token-based fuzzy match
+    for (entry in nseMap.entrySet()) {
+        def nseTokens = entry.key.tokenize(&quot; &quot;)
+        def common = growTokens.intersect(nseTokens)
+        if (common.size() &gt;= Math.min(2, growTokens.size())) {
+            return entry.value
+        }
+    }
+    return &quot;&quot;
+}
+
+// --- 📦 Holdings Extraction ---
+def output = new StringBuilder(&quot;company_name,corpus_per,ticker\n&quot;)
+
+for (int i = 1; vars.get(&quot;compandcorpus_${i}&quot;) != null; i++) {
+    def row = vars.get(&quot;compandcorpus_${i}&quot;)
+    def matcher = (row =~ /^(.*?)(\d+\.\d+)%?$/)
+    if (matcher.matches()) {
+        def rawCompany = matcher[0][1].trim()
+        def corpus = matcher[0][2]
+        def ticker = findTicker(rawCompany)
+
+        output.append(&quot;\&quot;${rawCompany}\&quot;,${corpus},${ticker}\n&quot;)
+    }
+}
+
+// --- 💾 Write Output ---
+Files.createDirectories(outFile.getParent())
+Files.write(outFile, output.toString().getBytes(&quot;UTF-8&quot;))
+log.info(&quot;✅ Ticker mapping complete: ${outFile}&quot;)
+</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="v3 -98%" enabled="false">
+            <stringProp name="cacheKey">false</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.nio.file.*
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.regex.*
+
+// --- 🗂 Config ---
+def basePath = &quot;/Users/swaraj.thummapudi/Documents/Personal/Stock/&quot;
+def today    = LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;ddMMMyy&quot;))
+def fundName = vars.get(&quot;fundName&quot;) ?: &quot;default_fund&quot;
+def outFile  = Paths.get(basePath, &quot;${fundName}_${today}_final.csv&quot;)
+def tickerFile = new File(&quot;${basePath}EQUITY_L.csv&quot;)
+
+// --- 🧼 Cleaner ---
+def cleanName = { String name -&gt;
+    name = name.toLowerCase()
+    name = name.replaceAll(/[.,()\-&amp;]/, &quot; &quot;)
+    name = name.replaceAll(/\b(ltd|limited|inc|corp|co|company|india)\b/, &quot;&quot;)
+    name = name.replaceAll(/\s+/, &quot; &quot;)
+    return name.trim()
+}
+
+// --- 📄 Build NSE map: cleanName → symbol ---
+def nseMap = [:]
+tickerFile.eachLine { line -&gt;
+    def parts = line.split(&quot;,&quot;, -1)
+    if (parts.size() &gt;= 2) {
+        def symbol = parts[0].trim()
+        def companyName = parts[1].trim()
+        def clean = cleanName(companyName)
+        nseMap[clean] = symbol
+    }
+}
+
+// --- 🔍 Fuzzy-ish match function ---
+def findTicker = { String raw -&gt;
+    def c = cleanName(raw)
+    def tokens = c.tokenize(&quot; &quot;)
+    def bestMatch = null
+    def bestScore = -1
+
+    // 1) Exact match
+    if (nseMap.containsKey(c)) return nseMap[c]
+
+    // 2) Multi-token: intersect ≥2 tokens
+    if (tokens.size() &gt; 1) {
+        nseMap.each { name, sym -&gt;
+            def common = tokens.intersect(name.tokenize(&quot; &quot;))
+            if (common.size() &gt;= 2 &amp;&amp; common.size() &gt; bestScore) {
+                bestScore = common.size()
+                bestMatch = sym
+            }
+        }
+        if (bestMatch) return bestMatch
+    }
+
+    // 3) Fallback: single token match
+    if (tokens.size() == 1) {
+        def tk = tokens[0]
+        nseMap.each { name, sym -&gt;
+            if (name.contains(tk)) {
+                bestMatch = sym
+                return // break out of closure
+            }
+        }
+        if (bestMatch) return bestMatch
+    }
+
+    return &quot;&quot;
+}
+
+// --- 📦 Extract and Merge ---
+def out = new StringBuilder(&quot;company_name,corpus_per,ticker\n&quot;)
+for (int i = 1; vars.get(&quot;compandcorpus_${i}&quot;) != null; i++) {
+    def row = vars.get(&quot;compandcorpus_${i}&quot;)
+    def m = (row =~ /^(.*?)(\d+\.\d+)%?$/)
+    if (m.matches()) {
+        def name = m[0][1].trim()
+        def corpus = m[0][2]
+        def ticker = findTicker(name)
+        if (!ticker) log.warn(&quot;❌ No ticker for &apos;${name}&apos;&quot;)
+        out.append(&quot;\&quot;${name}\&quot;,${corpus},${ticker}\n&quot;)
+    }
+}
+
+// --- 💾 Write CSV ---
+Files.createDirectories(outFile.parent)
+Files.write(outFile, out.toString().getBytes(&quot;UTF-8&quot;))
+log.info(&quot;✅ Wrote: ${outFile}&quot;)</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="v4-100% Accuracy">
+            <stringProp name="cacheKey">false</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.nio.file.*
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.regex.*
+
+// --- 🗂 Config ---
+//def basePath = &quot;/Users/swaraj.thummapudi/Documents/Personal/Stock/&quot;
+String basePath = vars.get(&quot;basePath&quot;)
+def today    = LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;ddMMMyy&quot;))
+def fundName = vars.get(&quot;fundNames&quot;) ?: &quot;default_fund&quot;
+def outFile  = Paths.get(basePath, &quot;${fundName}_final.csv&quot;)
+def tickerFile = new File(&quot;${basePath}EQUITY_L.csv&quot;)
+
+// --- 🧼 Cleaner ---
+def cleanName = { String name -&gt;
+    name = name.toLowerCase()
+
+    // 🔄 Replace dotted abbreviations: E.I.D. → EID
+    name = name.replaceAll(/\b([a-z])\./, &apos;$1&apos;)        // e.i.d. → eid
+    name = name.replaceAll(/\./, &quot;&quot;)                   // Remove any remaining dots
+
+    // ✂️ Remove brackets, dashes, ampersands, commas
+    name = name.replaceAll(/[\-()&amp;,]/, &quot; &quot;)
+
+    // 🧹 Remove suffix words
+    name = name.replaceAll(/\b(ltd|limited|inc|corp|co|company)\b/, &quot;&quot;)
+    // NOTE: keep &quot;india&quot; if it&apos;s commonly present in NSE tickers
+
+    name = name.replaceAll(/([a-zA-Z])(\d)/, &apos;$1 $2&apos;)
+    name = name.replaceAll(/(\d)([a-zA-Z])/, &apos;$1 $2&apos;)
+
+    // Collapse multiple spaces
+    name = name.replaceAll(/\s+/, &quot; &quot;).trim()
+
+    return name
+}
+
+
+// --- 📄 Build NSE map: cleanName → symbol ---
+def nseMap = [:]
+tickerFile.eachLine { line -&gt;
+    def parts = line.split(&quot;,&quot;, -1)
+    if (parts.size() &gt;= 2) {
+        def symbol = parts[0].trim()
+        def companyName = parts[1].trim()
+        def clean = cleanName(companyName)
+        nseMap[clean] = symbol
+    }
+}
+
+// --- 🔍 Fuzzy-ish match function ---
+def findTicker = { String raw -&gt;
+    def c = cleanName(raw)
+    def tokens = c.tokenize(&quot; &quot;)
+    def bestMatch = null
+    def bestScore = -1
+
+    // 1) Exact match
+    if (nseMap.containsKey(c)) return nseMap[c]
+
+    // 2) Multi-token: intersect ≥2 tokens
+    if (tokens.size() &gt; 1) {
+        nseMap.each { name, sym -&gt;
+            def common = tokens.intersect(name.tokenize(&quot; &quot;))
+            if (common.size() &gt;= 2 &amp;&amp; common.size() &gt; bestScore) {
+                bestScore = common.size()
+                bestMatch = sym
+            }
+        }
+        if (bestMatch) return bestMatch
+    }
+
+    // 3) Fallback: single token match
+    if (tokens.size() == 1) {
+        def tk = tokens[0]
+        nseMap.each { name, sym -&gt;
+            if (name.contains(tk)) {
+                bestMatch = sym
+                return // break out of closure
+            }
+        }
+        if (bestMatch) return bestMatch
+    }
+
+    return &quot;&quot;
+}
+
+// --- 📦 Extract and Merge ---
+def out = new StringBuilder(&quot;company_name,corpus_per,ticker\n&quot;)
+for (int i = 1; vars.get(&quot;compandcorpus_${i}&quot;) != null; i++) {
+    def row = vars.get(&quot;compandcorpus_${i}&quot;)
+    def m = (row =~ /^(.*?)(\d+\.\d+)%?$/)
+    if (m.matches()) {
+        def name = m[0][1].trim()
+        def corpus = m[0][2]
+        def ticker = findTicker(name)
+        if (!ticker) log.warn(&quot;❌ No ticker for &apos;${name}&apos;&quot;)
+        out.append(&quot;\&quot;${name}\&quot;,${corpus},${ticker}\n&quot;)
+    }
+}
+
+// --- 💾 Write CSV ---
+Files.createDirectories(outFile.parent)
+Files.write(outFile, out.toString().getBytes(&quot;UTF-8&quot;))
+log.info(&quot;✅ Wrote: ${outFile}&quot;)</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

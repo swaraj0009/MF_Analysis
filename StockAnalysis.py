@@ -1,111 +1,148 @@
-import requests
+import os
+import json
 import pandas as pd
-from bs4 import BeautifulSoup
 import yfinance as yf
-from datetime import datetime
-import time
+import requests
+from datetime import datetime, timedelta
 
-FUND_URL = "https://www.valueresearchonline.com/funds/29014/quant-small-cap-fund-direct-plan-growth/"
-DIP_THRESHOLD = -1.5
+NS_SUFFIX = ".NS"
+USE_BACKTEST = False
 
-def fetch_holdings_from_vro(url):
-    print("📥 Fetching holdings from ValueResearch...")
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, "html.parser")
+NAV_DATE = "2025-07-22" if USE_BACKTEST else datetime.now().strftime("%Y-%m-%d")
+RUN_TIME = "15:50:00" if USE_BACKTEST else datetime.now().strftime("%H:%M:%S")
 
-    table = soup.find("table", {"class": "fund-holdings-table"})
+# Mapping fund CSVs to their mfapi URLs
+fund_sources = {
+    "quant-small-cap-fund-direct-plan-growth": "https://api.mfapi.in/mf/120828",
+    "canara-robeco-small-cap-fund-direct-growth": "https://api.mfapi.in/mf/146130",
+    "motilal-oswal-most-focused-midcap-30-fund-direct-growth": "https://api.mfapi.in/mf/127042"
+}
 
-    if not table:
-        print("❌ Holdings table not found.")
+fund_csvs = [
+    "quant-small-cap-fund-direct-plan-growth_final.csv",
+    "canara-robeco-small-cap-fund-direct-growth_final.csv",
+    "motilal-oswal-most-focused-midcap-30-fund-direct-growth_final.csv"
+]
+
+def get_prev_trading_day(date_str):
+    d = datetime.strptime(date_str, "%Y-%m-%d") - timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d.strftime("%Y-%m-%d")
+
+def fetch_previous_close(ticker):
+    prev = get_prev_trading_day(NAV_DATE)
+    try:
+        hist = yf.Ticker(ticker).history(start=prev, end=NAV_DATE)
+        if not hist.empty:
+            return hist["Close"].iloc[-1]
+    except:
+        pass
+    return None
+
+def fetch_live_price(ticker):
+    try:
+        if USE_BACKTEST:
+            hist = yf.Ticker(ticker).history(
+                start=NAV_DATE,
+                end=(datetime.strptime(NAV_DATE, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
+            )
+        else:
+            hist = yf.Ticker(ticker).history(period="1d")
+        if not hist.empty:
+            return hist["Close"].iloc[-1]
+    except:
+        pass
+    return None
+
+# 🔄 Replacing JSON with live NAV from mfapi
+def fetch_nav_from_api(url):
+    try:
+        response = requests.get(url, timeout=10)
+        data = response.json().get("data", [])
+        df = pd.DataFrame(data)
+        df["date"] = pd.to_datetime(df["date"], dayfirst=True)
+        df["nav"] = df["nav"].astype(float)
+        df = df.sort_values("date")
+        df.set_index("date", inplace=True)
+        return df
+    except Exception as e:
+        print(f"⚠️ Failed to fetch from {url}: {e}")
         return pd.DataFrame()
 
-    rows = table.find_all("tr")[1:]  # Skip header
-    data = []
-    for row in rows:
-        cols = row.find_all("td")
-        if len(cols) >= 3:
-            stock = cols[0].get_text(strip=True)
-            weight = cols[2].get_text(strip=True).replace("%", "")
-            try:
-                data.append({"Stock": stock, "Weight(%)": float(weight)})
-            except:
-                continue
+def get_month_start(date_str):
+    dt = datetime.strptime(date_str, "%Y-%m-%d")
+    return dt.replace(day=1).strftime("%Y-%m-%d")
 
-    df = pd.DataFrame(data)
-    print(f"✅ Found {len(df)} holdings.\n")
-    return df
-
-def get_top_holdings(df, threshold=75):
-    df_sorted = df.sort_values("Weight(%)", ascending=False).reset_index(drop=True)
-    df_sorted["Cumulative"] = df_sorted["Weight(%)"].cumsum()
-    selected = df_sorted[df_sorted["Cumulative"] <= threshold]
-    if selected.empty:
-        print("❌ Could not select top holdings.")
-    else:
-        print(f"✅ Selected {len(selected)} stocks covering {selected['Cumulative'].iloc[-1]:.2f}% of portfolio.")
-    return selected
-
-def map_to_nse_tickers(stock_names):
-    # Very simple map, can be expanded with a dictionary
-    print("🔁 Mapping stock names to NSE tickers...")
-    tickers = []
-    for name in stock_names:
-        search = yf.Ticker(name + ".NS")
-        try:
-            info = search.info
-            if info.get("regularMarketPrice"):
-                tickers.append(name + ".NS")
-        except:
-            continue
-    print(f"✅ Mapped tickers: {tickers}")
-    return tickers
-
-def calculate_weighted_movement(tickers, weights):
-    print("📈 Fetching today's price data...")
-    if not tickers:
-        return 0.0
-    movements = []
-    for ticker in tickers:
-        try:
-            data = yf.download(ticker, period="1d", interval="5m", progress=False)
-            if data.empty:
-                continue
-            open_price = data.iloc[0]["Open"]
-            latest_price = data.iloc[-1]["Close"]
-            pct_change = ((latest_price - open_price) / open_price) * 100
-            movements.append(pct_change)
-        except Exception as e:
-            print(f"⚠️ Failed to fetch {ticker}: {e}")
+def analyze_nav_csv_and_generate_msg():
+    for csv_file in fund_csvs:
+        fund_key = csv_file.split("_")[0]
+        api_url = fund_sources.get(fund_key)
+        if not api_url:
+            print(f"⚠️ No API URL found for {fund_key}")
             continue
 
-    if not movements:
-        return 0.0
-    weighted_avg = sum(w * m for w, m in zip(weights, movements)) / sum(weights)
-    return round(weighted_avg, 2)
+        nav_df = fetch_nav_from_api(api_url)
+        if nav_df.empty:
+            print(f"⚠️ NAV data unavailable for {fund_key}")
+            continue
 
-def run_pipeline():
-    print("🚀 Starting Mutual Fund Dip Alert System...\n")
+        prev_date = get_prev_trading_day(NAV_DATE)
+        month_start_date = get_month_start(NAV_DATE)
 
-    holdings_df = fetch_holdings_from_vro(FUND_URL)
-    if holdings_df.empty:
-        print("❌ No holdings data found.")
-        return
+        nav_month_start = nav_df.loc[month_start_date]["nav"] if month_start_date in nav_df.index else None
+        nav_yesterday = nav_df.loc[prev_date]["nav"] if prev_date in nav_df.index else None
+        nav_today = nav_df.loc[NAV_DATE]["nav"] if NAV_DATE in nav_df.index else None
 
-    top_df = get_top_holdings(holdings_df)
-    if top_df.empty:
-        return
+        month_trend = ((nav_yesterday - nav_month_start) / nav_month_start * 100) if nav_month_start and nav_yesterday else None
+        off_drop = ((nav_today - nav_yesterday) / nav_yesterday * 100) if nav_today and nav_yesterday else None
 
-    tickers = map_to_nse_tickers(top_df["Stock"])
-    movement = calculate_weighted_movement(tickers, top_df["Weight(%)"])
+        # 💼 Ticker-based estimated NAV
+        df = pd.read_csv(csv_file)
+        df = df[df['ticker'].notna() & df['ticker'].str.strip().astype(bool)]
+        prev_nav = live_nav = 0.0
+        for _, row in df.iterrows():
+            tkr = f"{row['ticker'].upper()}{NS_SUFFIX}"
+            w = row.get('corpus_percent', row.get('corpus_per', 0)) / 100
+            pc = fetch_previous_close(tkr)
+            lp = fetch_live_price(tkr)
+            if pc: prev_nav += pc * w
+            if lp: live_nav += lp * w
 
-    print(f"\n📊 Weighted Average Movement: {movement:.2f}%")
+        calc_drop = (live_nav - prev_nav) / prev_nav * 100 if prev_nav else None
+        deviation = calc_drop - off_drop if calc_drop is not None and off_drop is not None else None
 
-    if movement <= DIP_THRESHOLD:
-        print(f"📉 Buy Signal Triggered: Weighted dip = {movement:.2f}%")
-    else:
-        print(f"✅ No Signal. Weighted dip = {movement:.2f}%")
+        print(f"\n\n📁 Fund: {fund_key}")
+        print(f"📊 NAV Date: {NAV_DATE}, Time: {RUN_TIME} IST")
 
-    print("\n✅ Pipeline completed.")
+        # if nav_yesterday and nav_today:
+        #     print(f"💹 Off NAV (Prev): ₹{nav_yesterday:.2f}")
+        #     print(f"💹 Off NAV (Now): ₹{nav_today:.2f}")
+        #     print(f"📉 Off Drop %: {off_drop:+.2f}%")
+        # else:
+        #     print("⚠️ Incomplete official NAVs")
 
-# ▶️ Run it
-run_pipeline()
+        print(f"\n💹 Calc NAV (Prev): ₹{prev_nav:.2f}")
+        print(f"💹 Calc NAV (Now): ₹{live_nav:.2f}")
+        if calc_drop is not None:
+            print(f"📉 Calc Drop %: {calc_drop:+.2f}%")
+        else:
+            print("⚠️ Could not compute proxy drop")
+
+        if deviation is not None:
+            print(f"\n🔴 Deviation: {deviation:+.2f}%")
+
+        if nav_month_start and nav_yesterday:
+            print("\n🔹 Trend Analysis (Month-to-Date):")
+            print(f"   NAV on {month_start_date}: ₹{nav_month_start:.2f}")
+            print(f"   NAV on {prev_date}: ₹{nav_yesterday:.2f}")
+            print(f"   Cumulative Change: {month_trend:+.2f}%")
+        else:
+            print("⚠️ Month trend data insufficient")
+
+        print("✅ Done.")
+        print("::::::::::::::::::::::::::::::::::::::::")
+
+# --- 🚀 RUN ---
+if __name__ == "__main__":
+    analyze_nav_csv_and_generate_msg()

@@ -1,0 +1,1231 @@
+2025-07-24 13:39:40,587 INFO o.a.j.u.JMeterUtils: Setting Locale to en_JP
+2025-07-24 13:39:40,633 INFO o.a.j.JMeter: Loading user properties from: /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/bin/user.properties
+2025-07-24 13:39:40,634 INFO o.a.j.JMeter: Loading system properties from: /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/bin/system.properties
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: Version 5.6.3
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: java.version=19.0.1
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: os.name=Mac OS X
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: os.arch=aarch64
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: os.version=15.5
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: java.awt.headless=null
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: Max memory     =2147483648
+2025-07-24 13:39:40,638 INFO o.a.j.JMeter: Available Processors =8
+2025-07-24 13:39:40,643 INFO o.a.j.JMeter: Default Locale=English (Japan)
+2025-07-24 13:39:40,643 INFO o.a.j.JMeter: JMeter  Locale=English (Japan)
+2025-07-24 13:39:40,643 INFO o.a.j.JMeter: JMeterHome=/Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3
+2025-07-24 13:39:40,643 INFO o.a.j.JMeter: user.dir  =/Users/swaraj.thummapudi/Documents/Personal/Stock
+2025-07-24 13:39:40,643 INFO o.a.j.JMeter: PWD       =/Users/swaraj.thummapudi/Documents/Personal/Stock
+2025-07-24 13:39:40,646 INFO o.a.j.JMeter: IP: 10.196.168.92 Name: IN-FVFGV5Z2Q05F FullName: 10.196.168.92
+2025-07-24 13:39:40,655 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-07-24 13:39:41,387 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.IntelliJTheme
+2025-07-24 13:39:42,643 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,691 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-filterresults-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,694 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-dummy-0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,697 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,704 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,705 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-tst-2.6.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,706 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,708 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-senseuploader-3.5.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,712 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-synthesis-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,767 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,768 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-filterresults-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,769 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-dummy-0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,770 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,770 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,770 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-tst-2.6.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,770 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,771 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-senseuploader-3.5.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,771 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-synthesis-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:39:42,837 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-638d0e02aff2bbfe711e7a0431557467-gui
+2025-07-24 13:39:44,323 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-07-24 13:39:44,324 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-07-24 13:39:44,324 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-07-24 13:39:44,324 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-07-24 13:39:44,324 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-07-24 13:39:44,324 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-07-24 13:39:44,677 WARN o.a.j.g.ObjectTableModel: Header count=13 but classes count=11
+2025-07-24 13:39:44,677 WARN o.a.j.g.ObjectTableModel: Header count=13 but writeFunctor count=11
+2025-07-24 13:39:47,387 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, jpgc-graphs-additional=2.0, jpgc-sense=3.5, jpgc-dummy=0.4, jpgc-filterresults=2.2, bzm-parallel=0.12, jpgc-plugins-manager=1.10, jpgc-synthesis=2.2, jpgc-tst=2.6, jmeter-core=5.6.3, jmeter-ftp=5.6.3, jmeter-http=5.6.3, jmeter-jdbc=5.6.3, jmeter-jms=5.6.3, jmeter-junit=5.6.3, jmeter-java=5.6.3, jmeter-ldap=5.6.3, jmeter-mail=5.6.3, jmeter-mongodb=5.6.3, jmeter-native=5.6.3, jmeter-tcp=5.6.3, jmeter-components=5.6.3]
+2025-07-24 13:39:47,388 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager]
+2025-07-24 13:40:47,802 INFO o.a.j.s.FileServer: Default base='/Users/swaraj.thummapudi/Documents/Personal/Stock'
+2025-07-24 13:40:47,813 INFO o.a.j.g.a.Load: Loading file: /Users/swaraj.thummapudi/Documents/Personal/Stock/Holdings.jmx
+2025-07-24 13:40:47,813 INFO o.a.j.s.FileServer: Set new base='/Users/swaraj.thummapudi/Documents/Personal/Stock'
+2025-07-24 13:40:47,943 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-07-24 13:40:47,948 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-07-24 13:40:47,949 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-07-24 13:40:47,950 INFO o.a.j.s.SaveService: Loading file: /Users/swaraj.thummapudi/Documents/Personal/Stock/Holdings.jmx
+2025-07-24 13:40:48,050 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-07-24 13:40:48,050 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-07-24 13:40:48,050 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-07-24 13:40:48,050 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-07-24 13:40:48,111 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,113 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-filterresults-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,114 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-dummy-0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,115 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,116 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,116 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-tst-2.6.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,116 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,117 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-senseuploader-3.5.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,118 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-synthesis-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,129 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,130 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-filterresults-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,130 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-dummy-0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,131 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,131 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,131 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-tst-2.6.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,131 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,132 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-senseuploader-3.5.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,132 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-synthesis-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 13:40:48,347 INFO o.a.j.s.FileServer: Set new base='/Users/swaraj.thummapudi/Documents/Personal/Stock'
+2025-07-24 14:46:04,422 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 14:46:04,429 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 14:46:04,429 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 14:46:04,431 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-07-24 14:46:04,431 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-07-24 14:46:04,475 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,482 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-filterresults-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,484 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-dummy-0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,485 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,486 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,488 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-tst-2.6.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,488 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,490 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-senseuploader-3.5.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,492 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-synthesis-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:46:04,500 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 14:46:04,667 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 14:46:04,668 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 14:46:04,668 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 14:46:04,668 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 14:46:04,670 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 14:46:04,670 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 14:46:04,670 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 14:46:04,675 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = IN-FVFGV5Z2Q05F
+2025-07-24 14:46:04,683 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 3
+2025-07-24 14:46:04,871 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2025-07-24 14:46:04,872 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2025-07-24 14:46:04,872 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2025-07-24 14:46:04,884 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2025-07-24 14:46:04,885 INFO o.a.j.u.SSLManager: KeyStore created OK
+2025-07-24 14:46:04,885 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2025-07-24 14:46:05,007 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 14:46:05,126 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-07-24 14:46:05,340 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 14:46:05,434 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.CssParser
+2025-07-24 14:46:05,582 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76585] starting at token 'data-x-position' until [1:76660] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76600.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76693] starting at token 'data-x-position' until [1:76748] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76708.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76778] starting at token 'data-x-position' until [1:76850] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76793.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76880] starting at token 'data-x-position' until [1:76940] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76895.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76970] starting at token 'data-y-position' until [1:77039] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76985.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77072] starting at token 'data-y-position' until [1:77124] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77087.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77154] starting at token 'data-y-position' until [1:77232] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77169.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77260] starting at token 'data-styled' until [1:77423] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77271.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,583 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77451] starting at token 'data-y-position' until [1:77544] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77466.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,584 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77572] starting at token 'data-y-position' until [1:77681] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77587.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,584 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77709] starting at token 'data-mounted' until [1:77756] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77721.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,584 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77784] starting at token 'data-visible' until [1:77834] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77796.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,585 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:78226] starting at token 'data-expanded' until [1:78433] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 78239.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,585 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:78461] starting at token 'data-mounted' until [1:78605] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 78473.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,585 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:79255] starting at token 'data-expanded' until [1:79324] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 79268.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,586 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:79352] starting at token 'data-removed' until [1:79475] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 79364.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:46:05,697 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:2656] starting at token ',' until [1:2657] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 2657.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2025-07-24 14:46:05,697 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:2680] starting at token ',' until [1:2681] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 2681.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2025-07-24 14:46:07,428 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script1
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script1
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script1
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script1.run(Script1.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:46:07,428 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script2
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script2
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script2
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script2.run(Script2.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:46:07,432 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 14:46:07,432 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 14:46:07,432 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 14:46:07,432 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 14:46:09,896 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script3
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script3
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script3
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script3.run(Script3.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:46:09,897 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 14:46:09,897 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 14:46:09,898 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 14:46:09,899 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-07-24 14:46:48,698 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 14:46:48,701 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 14:46:48,703 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 14:46:48,773 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 14:46:48,773 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 14:46:48,773 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 14:46:48,774 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 14:46:48,775 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 14:46:48,776 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 14:46:48,776 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 14:46:49,113 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 14:46:49,446 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 14:46:50,328 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script4
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script4
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script4
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script4.run(Script4.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:46:50,329 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 14:46:50,329 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 14:46:50,890 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script5
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script5
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script5
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script5.run(Script5.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:46:50,891 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 14:46:50,891 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 14:46:53,192 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script6
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script6
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script6
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script6.run(Script6.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:46:53,193 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 14:46:53,193 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 14:46:53,198 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 14:46:53,199 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-07-24 14:47:31,510 INFO o.a.j.g.a.Load: Loading file: /Users/swaraj.thummapudi/Documents/Personal/Stock/Holdings.jmx
+2025-07-24 14:47:31,514 INFO o.a.j.s.FileServer: Set new base='/Users/swaraj.thummapudi/Documents/Personal/Stock'
+2025-07-24 14:47:31,514 INFO o.a.j.s.SaveService: Loading file: /Users/swaraj.thummapudi/Documents/Personal/Stock/Holdings.jmx
+2025-07-24 14:47:31,565 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,567 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-filterresults-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,569 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-dummy-0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,570 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,570 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,571 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-tst-2.6.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,571 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,572 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-senseuploader-3.5.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,572 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-synthesis-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,579 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,580 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-filterresults-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,581 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-dummy-0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,581 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,581 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,581 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-tst-2.6.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,581 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,582 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-senseuploader-3.5.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,582 INFO o.a.j.r.ClassFinder: Will scan jar /Users/swaraj.thummapudi/Downloads/apache-jmeter-5.6.3/lib/ext/jmeter-plugins-synthesis-2.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-07-24 14:47:31,646 INFO o.a.j.s.FileServer: Set new base='/Users/swaraj.thummapudi/Documents/Personal/Stock'
+2025-07-24 14:47:43,487 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 14:47:43,488 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 14:47:43,489 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 14:47:43,522 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 14:47:43,522 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 14:47:43,523 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 14:47:43,523 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 14:47:43,525 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 14:47:43,526 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 14:47:43,527 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 14:47:43,862 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 14:47:44,094 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76585] starting at token 'data-x-position' until [1:76660] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76600.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,094 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76693] starting at token 'data-x-position' until [1:76748] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76708.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,094 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76778] starting at token 'data-x-position' until [1:76850] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76793.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,094 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76880] starting at token 'data-x-position' until [1:76940] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76895.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,094 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:76970] starting at token 'data-y-position' until [1:77039] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 76985.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,094 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77072] starting at token 'data-y-position' until [1:77124] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77087.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,094 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77154] starting at token 'data-y-position' until [1:77232] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77169.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,095 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77260] starting at token 'data-styled' until [1:77423] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77271.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,095 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77451] starting at token 'data-y-position' until [1:77544] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77466.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,095 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77572] starting at token 'data-y-position' until [1:77681] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77587.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,095 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77709] starting at token 'data-mounted' until [1:77756] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77721.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,095 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:77784] starting at token 'data-visible' until [1:77834] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 77796.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,096 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:78226] starting at token 'data-expanded' until [1:78433] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 78239.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,096 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:78461] starting at token 'data-mounted' until [1:78605] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 78473.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,096 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:79255] starting at token 'data-expanded' until [1:79324] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 79268.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,096 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:79352] starting at token 'data-removed' until [1:79475] to token '}' (based on com.helger.css.parser.ParseException: Encountered unexpected token: "=" "="
+    at line 1, column 79364.
+
+Was expecting one of:
+
+    "]"
+    <S>
+)
+2025-07-24 14:47:44,170 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:2656] starting at token ',' until [1:2657] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 2657.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2025-07-24 14:47:44,170 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:2680] starting at token ',' until [1:2681] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 2681.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2025-07-24 14:47:44,194 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 14:47:45,210 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script7
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script7
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script7
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script7.run(Script7.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:47:45,211 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 14:47:45,211 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 14:47:45,574 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script8
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script8
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script8
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script8.run(Script8.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:47:45,575 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 14:47:45,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 14:47:47,967 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script9
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script9
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script9
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script9.run(Script9.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:47:47,968 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 14:47:47,968 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 14:47:47,969 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 14:47:47,969 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-07-24 14:48:04,559 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 14:48:04,560 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 14:48:04,561 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 14:48:04,607 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 14:48:04,607 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 14:48:04,607 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 14:48:04,607 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 14:48:04,608 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 14:48:04,608 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 14:48:04,608 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 14:48:04,946 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 14:48:05,278 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 14:48:05,723 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script10
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script10
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script10
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script10.run(Script10.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:48:05,728 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 14:48:05,728 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 14:48:06,590 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script11
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script11
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script11
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script11.run(Script11.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:48:06,592 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 14:48:06,592 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 14:48:08,857 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script12
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script12
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script12
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script12.run(Script12.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 14:48:08,858 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 14:48:08,859 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 14:48:08,859 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 14:48:08,859 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-07-24 15:14:48,169 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 15:14:48,172 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 15:14:48,174 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 15:14:48,235 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 15:14:48,235 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 15:14:48,235 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 15:14:48,235 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 15:14:48,236 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 15:14:48,237 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 15:14:48,237 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 15:14:48,574 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 15:14:48,903 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 15:14:49,969 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script13.groovy: 13: The current scope already contains a variable of the name basePath
+ @ line 13, column 8.
+   String basePath = vars.get("basePath")
+          ^
+
+1 error
+
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script13.groovy: 13: The current scope already contains a variable of the name basePath
+ @ line 13, column 8.
+   String basePath = vars.get("basePath")
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:915) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:628) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:257) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.getScriptClass(GroovyScriptEngineImpl.java:336) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:153) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 15:14:49,973 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 15:14:49,973 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 15:14:50,464 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script14.groovy: 13: The current scope already contains a variable of the name basePath
+ @ line 13, column 8.
+   String basePath = vars.get("basePath")
+          ^
+
+1 error
+
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script14.groovy: 13: The current scope already contains a variable of the name basePath
+ @ line 13, column 8.
+   String basePath = vars.get("basePath")
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:915) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:628) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:257) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.getScriptClass(GroovyScriptEngineImpl.java:336) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:153) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 15:14:50,466 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 15:14:50,466 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 15:14:52,781 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script15.groovy: 13: The current scope already contains a variable of the name basePath
+ @ line 13, column 8.
+   String basePath = vars.get("basePath")
+          ^
+
+1 error
+
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script15.groovy: 13: The current scope already contains a variable of the name basePath
+ @ line 13, column 8.
+   String basePath = vars.get("basePath")
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:915) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:628) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314) ~[groovy-3.0.20.jar:3.0.20]
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:257) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.getScriptClass(GroovyScriptEngineImpl.java:336) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:153) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 15:14:52,795 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 15:14:52,795 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 15:14:52,796 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 15:14:52,797 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-07-24 15:20:53,869 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 15:20:53,871 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 15:20:53,872 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 15:20:53,931 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 15:20:53,932 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 15:20:53,932 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 15:20:53,932 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 15:20:53,933 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 15:20:53,933 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 15:20:53,933 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 15:20:54,265 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 15:20:54,603 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 15:20:55,459 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script16
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script16
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script16
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script16.run(Script16.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 15:20:55,462 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 15:20:55,462 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 15:20:55,971 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script17
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script17
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script17
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script17.run(Script17.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 15:20:55,973 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 15:20:55,973 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 15:20:58,521 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, v4-100% Accuracy
+javax.script.ScriptException: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script18
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:158) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:231) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) [ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: javax.script.ScriptException: groovy.lang.MissingPropertyException: No such property: basePath for class: Script18
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: basePath for class: Script18
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341) ~[groovy-3.0.20.jar:3.0.20]
+	at Script18.run(Script18.groovy:10) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:155) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 8 more
+2025-07-24 15:20:58,522 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 15:20:58,522 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 15:20:58,524 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 15:20:58,524 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-07-24 15:24:01,546 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 15:24:01,546 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 15:24:01,547 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 15:24:01,587 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 15:24:01,587 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 15:24:01,587 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 15:24:01,587 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 15:24:01,588 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 15:24:01,588 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 15:24:01,588 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 15:24:01,926 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 15:24:02,255 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 15:24:03,464 WARN o.a.j.e.J.v4-100% Accuracy: ❌ No ticker for 'Quant Gilt Fund Direct - Growth'
+2025-07-24 15:24:03,471 INFO o.a.j.e.J.v4-100% Accuracy: ✅ Wrote: /Users/swaraj.thummapudi/Documents/Personal/Stock/quant-small-cap-fund-direct-plan-growth_24Jul25_final.csv
+2025-07-24 15:24:03,473 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 15:24:03,473 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 15:24:03,825 INFO o.a.j.e.J.v4-100% Accuracy: ✅ Wrote: /Users/swaraj.thummapudi/Documents/Personal/Stock/canara-robeco-small-cap-fund-direct-growth_24Jul25_final.csv
+2025-07-24 15:24:03,827 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 15:24:03,827 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 15:24:06,213 INFO o.a.j.e.J.v4-100% Accuracy: ✅ Wrote: /Users/swaraj.thummapudi/Documents/Personal/Stock/motilal-oswal-most-focused-midcap-30-fund-direct-growth_24Jul25_final.csv
+2025-07-24 15:24:06,214 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 15:24:06,215 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 15:24:06,216 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 15:24:06,216 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-07-24 15:25:25,240 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-07-24 15:25:25,241 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-07-24 15:25:25,242 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-07-24 15:25:25,318 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-07-24 15:25:25,318 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group Thread Group.
+2025-07-24 15:25:25,318 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-07-24 15:25:25,319 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=3 ramp-up=1 delayedStart=false
+2025-07-24 15:25:25,319 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-07-24 15:25:25,320 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-07-24 15:25:25,320 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-07-24 15:25:25,655 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2025-07-24 15:25:25,986 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2025-07-24 15:25:26,568 WARN o.a.j.e.J.v4-100% Accuracy: ❌ No ticker for 'Quant Gilt Fund Direct - Growth'
+2025-07-24 15:25:26,569 INFO o.a.j.e.J.v4-100% Accuracy: ✅ Wrote: /Users/swaraj.thummapudi/Documents/Personal/Stock/quant-small-cap-fund-direct-plan-growth_final.csv
+2025-07-24 15:25:26,571 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-07-24 15:25:26,571 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-07-24 15:25:27,426 INFO o.a.j.e.J.v4-100% Accuracy: ✅ Wrote: /Users/swaraj.thummapudi/Documents/Personal/Stock/canara-robeco-small-cap-fund-direct-growth_final.csv
+2025-07-24 15:25:27,429 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2025-07-24 15:25:27,429 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2025-07-24 15:25:30,513 INFO o.a.j.e.J.v4-100% Accuracy: ✅ Wrote: /Users/swaraj.thummapudi/Documents/Personal/Stock/motilal-oswal-most-focused-midcap-30-fund-direct-growth_final.csv
+2025-07-24 15:25:30,514 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2025-07-24 15:25:30,514 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2025-07-24 15:25:30,515 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-07-24 15:25:30,516 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
